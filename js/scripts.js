@@ -6,26 +6,26 @@ const randColorButton = document.querySelector(".randColor");
 const imageSelect = document.getElementById("imageSelect");
 const selectedImage = document.getElementById("selectedImage");
 
-// Add event listeners for button click and select change
+// Adding event listeners for button click and select change
 custColorButton.addEventListener("click", changeCustomColor);
 randColorButton.addEventListener("click", changeRandomColor);
 imageSelect.addEventListener("change", displaySelectedImage);
 
-// Function to change background color based on user input
+// Function for changing background color according to user input
 function changeCustomColor() {
     const userInput = parseInt(customNumberInput.value);
     document.body.style.backgroundColor = getColorForRange(userInput);
     studentIdTag.textContent = `Student ID: 200477161`;
 }
 
-// Function to change background color randomly
+// Function to randomly change background color
 function changeRandomColor() {
     const randomValue = Math.floor(Math.random() * 100) + 1;
     document.body.style.backgroundColor = getColorForRange(randomValue);
     studentIdTag.textContent = `Number: ${randomValue}`;
 }
 
-// Function to get color based on user input range
+// Function for getting color based on user input range
 function getColorForRange(value) {
     if (value < 0 || value > 100) return "red";
     if (value >= 0 && value <= 20) return "green";
