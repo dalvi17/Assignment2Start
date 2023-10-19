@@ -15,7 +15,7 @@ imageSelect.addEventListener("change", displaySelectedImage);
 function changeCustomColor() {
     const userInput = parseInt(customNumberInput.value);
     document.body.style.backgroundColor = getColorForRange(userInput);
-    studentIdTag.textContent = `Number: ${userInput}`;
+    studentIdTag.textContent = `Student ID: 200477161`;
 }
 
 // Function to change background color randomly
