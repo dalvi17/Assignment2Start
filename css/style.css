@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7; /* Set the default background color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-transform: uppercase;
+}
+
+.button-container {
+    margin: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#image-container {
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#selectedImage {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
